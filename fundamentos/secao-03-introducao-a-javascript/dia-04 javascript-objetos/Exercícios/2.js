@@ -26,4 +26,4 @@ leitor.livrosFavoritos.push({
   editora: 'Rocco',
 })
 
-console.log();
+console.log("Julia tem " + leitor.livrosFavoritos.length + " livros favoritos");
