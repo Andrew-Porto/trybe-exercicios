@@ -1,34 +1,34 @@
-// let student1 = {
-//     html: 'Muito Bom',
-//     css: 'Bom',
-//     javascript: 'Ótimo',
-//     softskills: 'Ótimo',
-//   };
-  
-//   let student2 = {
-//     html: 'Bom',
-//     css: 'Ótimo',
-//     javascript: 'Ruim',
-//     softskills: 'Ótimo',
-//     git: 'Bom', // chave adicionada
-//   };
-  
+let student1 = {
+  html: "Muito Bom",
+  css: "Bom",
+  javascript: "Ótimo",
+  softskills: "Ótimo",
+};
 
-// console.log(student1.keys());
+let student2 = {
+  html: "Bom",
+  css: "Ótimo",
+  javascript: "Ruim",
+  softskills: "Ótimo",
+  git: "Bom", // chave adicionada
+};
 
-  // function listSkills(student) {
-  //   let arrayOfSkills = Object.keys(student);
-  //   for (let index in arrayOfSkills) {
-  //     console.log(arrayOfSkills[index] + ', Nível: ' + student[arrayOfSkills[index]]);
-  //   }
-  // };
-  
-  // console.log('Estudante 1');
-  // listSkills(student1);
-  
-  // console.log('Estudante 2');
-  // listSkills(student2);
+console.log(Object.keys(student1));
 
+function listSkills(student) {
+  let arrayOfSkills = Object.keys(student);
+  for (let index in arrayOfSkills) {
+    console.log(
+      arrayOfSkills[index] + ", Nível: " + student[arrayOfSkills[index]]
+    );
+  }
+}
+
+console.log("Estudante 1");
+listSkills(student1);
+
+console.log("Estudante 2");
+listSkills(student2);
 
 
 // let student = {
@@ -61,17 +61,17 @@
 
 
 
-let countries = {
-    franca: 'Paris',
-    brasil: 'Brasília',
-    espanha: 'Madrid',
-    portugal: 'Lisboa',
-  };
-  let pairKeyValue = Object.entries(countries);
-  console.log(pairKeyValue);
+// let countries = {
+//     franca: 'Paris',
+//     brasil: 'Brasília',
+//     espanha: 'Madrid',
+//     portugal: 'Lisboa',
+//   };
+//   let pairKeyValue = Object.entries(countries);
+//   console.log(pairKeyValue);
 
-  for(index in pairKeyValue) {
-    console.log('--------');
-    console.log('País:', pairKeyValue[index][0]);
-    console.log('Capital:', pairKeyValue[index][1]);
-  };
+//   for(index in pairKeyValue) {
+//     console.log('--------');
+//     console.log('País:', pairKeyValue[index][0]);
+//     console.log('Capital:', pairKeyValue[index][1]);
+//   };

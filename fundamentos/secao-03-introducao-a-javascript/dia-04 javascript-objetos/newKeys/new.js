@@ -21,7 +21,7 @@ let key = 'Name';
 let names = 'Andrew'; 
 
 function addProperty(object, key, value){
-    student[key] = value;
+    object[key] = value;
 };
 addProperty(student, key, names);
 console.log(student);

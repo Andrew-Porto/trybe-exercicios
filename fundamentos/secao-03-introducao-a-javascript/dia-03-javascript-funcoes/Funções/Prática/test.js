@@ -42,31 +42,88 @@
 
 
 
-let nomes = concatName(["Lucas", "Cassiano", "Ferraz", "Paolillo"]);
-let rocket = concatName(["foguete", "não", "tem", "ré"]);
-let waltWhitman = concatName(["captain", "my", "captain"]);
+// let nomes = concatName(["Lucas", "Cassiano", "Ferraz", "Paolillo"]);
+// let rocket = concatName(["foguete", "não", "tem", "ré"]);
+// let waltWhitman = concatName(["captain", "my", "captain"]);
 
-function concatName (first, second, third ) {
+// function concatName (first, second, third ) {
   
-  first = nomes.indexOf('Cassiano', 'Ferraz');
-  nomes.splice(first, 2);
-  nomes.push(nomes.splice(0, 1)[0]);
-  nomes = sentence.nomes.join(', ');
+//   first = nomes.indexOf('Cassiano', 'Ferraz');
+//   nomes.splice(first, 2);
+//   nomes.push(nomes.splice(0, 1)[0]);
+//   nomes = sentence.nomes.join(', ');
 
-  second = rocket.indexOf('não', 'tem')
-  rocket.splice(second, 2);
-  rocket.push(sentence.rocket.splice(0, 1)[0]);
-  rocket = sentence.rocket.join(', ');
+//   second = rocket.indexOf('não', 'tem')
+//   rocket.splice(second, 2);
+//   rocket.push(sentence.rocket.splice(0, 1)[0]);
+//   rocket = sentence.rocket.join(', ');
 
-  third = waltWhitman.indexOf('my')
-  waltWhitman.splice(third, 2);
-  waltWhitman.push(sentence.waltWhitman.splice(1, 0));
-  waltWhitman = sentence.waltWhitman.join(', captain');
+//   third = waltWhitman.indexOf('my')
+//   waltWhitman.splice(third, 2);
+//   waltWhitman.push(sentence.waltWhitman.splice(1, 0));
+//   waltWhitman = sentence.waltWhitman.join(', captain');
 
-  return concatName
+//   return concatName
+// }
+
+// console.log(concatName);
+
+// let sentence = {
+//   nomes: ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'],
+//   rocket: ['foguete', 'não', 'tem', 'ré'],
+//   waltWhitman: ['captain', 'my', 'captain'],
+// };
+
+// function concatName(first, second, third) {
+//   first = sentence.nomes.indexOf('Cassiano', 'Ferraz');
+//   second = sentence.rocket.indexOf('não', 'tem');
+//   third = sentence.waltWhitman.indexOf('my');
+//   for (const key in sentence) {
+//     if (first > -1) {
+//     sentence.nomes.splice(first, 2);
+//     sentence.nomes.push(sentence.nomes.splice(0, 1)[0]);
+//     sentence.nomes = sentence.nomes.join(', ');
+//     } if (second > -1) {
+//     sentence.rocket.splice(second, 2);
+//     sentence.rocket.push(sentence.rocket.splice(0, 1)[0]);
+//     sentence.rocket = sentence.rocket.join(', ');
+//     } if (third > -1) {
+//     sentence.waltWhitman.splice(third, 2);
+//     sentence.waltWhitman.push(sentence.waltWhitman.splice(1, 0));
+//     sentence.waltWhitman = sentence.waltWhitman.join(', captain');
+//     } 
+//   }
+// }
+
+// console.log(concatName(sentence));
+
+
+
+
+
+
+
+
+
+//GPT
+
+
+let sentence = {
+  nomes: ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'],
+  rocket: ['foguete', 'não', 'tem', 'ré'],
+  waltWhitman: ['captain', 'my', 'captain'],
+};
+
+function concatName(first, second, third) {
+  let names = sentence.nomes.indexOf('Cassiano', 'Ferraz');
+  let rocket = sentence.rocket.indexOf('não', 'tem');
+  let waltWhitman = sentence.waltWhitman.indexOf('my');
+
+  console.log(names);
+
 }
 
-console.log(concatName);
+
 
 
 
